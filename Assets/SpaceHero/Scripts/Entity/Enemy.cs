@@ -110,7 +110,7 @@ namespace MinimalShooting
 
             // Calculate self-rotation speed.
             float speedRate = this.speed / this.speedMin;
-            GetComponentInChildren<Rotator>().SetSpeedOption(speedRate);
+            // GetComponentInChildren<Rotator>().SetSpeedOption(speedRate);
 
             // Determine direction if movementType is ToPlayer.
             if (this.movementType == MovementType.ToPlayer)
@@ -277,13 +277,13 @@ namespace MinimalShooting
                 return;
             }
 
-            if (transform.position.z < this.player.transform.position.z)
-            {
-                foreach (Weapon weapon in this.weapons)
-                {
-                    weapon.gameObject.SetActive(false);
-                }
-            }
+            // if (transform.position.z < this.player.transform.position.z)
+            // {
+            //     foreach (Weapon weapon in this.weapons)
+            //     {
+            //         weapon.gameObject.SetActive(false);
+            //     }
+            // }
         }
 
 
